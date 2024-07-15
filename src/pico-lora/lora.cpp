@@ -129,6 +129,7 @@ int LoRaClass::begin(long frequency)
   setFrequency(frequency);
 
   // set base addresses
+  // TODO: why are both the values set to 0?
   writeRegister(REG_FIFO_TX_BASE_ADDR, 0);
   writeRegister(REG_FIFO_RX_BASE_ADDR, 0);
 
